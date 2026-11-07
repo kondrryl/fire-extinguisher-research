@@ -1,0 +1,46 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local datasets and client data
+dataset/
+local/data/
+
+# Model weights
+*.pt
+*.pth
+*.onnx
+
+# Generated training artifacts
+runs/
+models/
+
+# Experimental results: keep only figures referenced in the report
+results/*
+!results/plots/
+!results/final_test_federated/
+
+results/plots/*
+!results/plots/classification_dynamics.png
+!results/plots/temporal_map_dynamics.png
+!results/plots/temporal_precision_recall.png
+!results/plots/test_map_comparison.png
+!results/plots/test_precision_recall.png
+
+results/final_test_federated/*
+!results/final_test_federated/confusion_matrix_normalized.png
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Local configuration and generated metadata
+.vscode/
+centralized/data_test.yaml
+local/trained_models*.json
